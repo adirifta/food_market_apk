@@ -22,4 +22,12 @@
     <string name="foodmarket">FoodMarket</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yeay_compleated">Yeay! compleated</string>
+    <string name="image">image</string>
+    <string name="now_you_are_able_to_order_nsome_foods_as_a_self_reward">Now you are able to order\nsome foods as a self-reward</string>
+    <string name="find_foods">Find Foods</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

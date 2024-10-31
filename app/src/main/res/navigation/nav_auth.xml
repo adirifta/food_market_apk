@@ -25,6 +25,14 @@
     <fragment android:id="@+id/fragmentSignUpAddress"
         android:name="com.adicoding.foodmarket.ui.auth.signup.SignupAddressFragment"
         tools:layout="@layout/fragment_signup_address">
+
+        <action android:id="@+id/action_signup_success"
+            app:destination="@id/fragmentSignUpSuccess"/>
+    </fragment>
+
+    <fragment android:id="@+id/fragmentSignUpSuccess"
+        android:name="com.adicoding.foodmarket.ui.auth.signup.SignupSuccessFragment"
+        tools:layout="@layout/fragment_signup_success">
     </fragment>
 
 </navigation>
