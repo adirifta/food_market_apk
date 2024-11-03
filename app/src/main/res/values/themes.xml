@@ -7,6 +7,10 @@
 
     <style name="Theme.FoodMarket" parent="Base.Theme.FoodMarket" />
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
     <style name="TextView"/>
     <style name="TextView.PoppinsMedium32sp020202">
         <item name="android:fontFamily">@font/poppins_medium</item>
@@ -55,4 +59,18 @@
         <item name="android:textColor">#FFF</item>
         <item name="android:background">@drawable/shape_rectangle_8_8d92a3</item>
     </style>
+
+    <style name="Tab">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#8D92A3</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="RatingBar">
+        <item name="colorControlNormal">#ECECEC</item>
+        <item name="android:textColor">#FFC700</item>
+    </style>
+
 </resources>

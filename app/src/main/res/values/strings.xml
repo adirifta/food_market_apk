@@ -28,6 +28,7 @@
     <string name="find_foods">Find Foods</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_order">Order</string>
+    <string name="title_profile">Profile</string>
+    <string name="let_s_get_some_foods">Let\'s get some foods</string>
 </resources>

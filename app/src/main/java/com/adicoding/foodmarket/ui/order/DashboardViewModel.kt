@@ -1,4 +1,4 @@
-package com.adicoding.foodmarket.ui.dashboard
+package com.adicoding.foodmarket.ui.order
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

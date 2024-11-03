@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.adicoding.foodmarket.MainActivity
 import com.adicoding.foodmarket.databinding.FragmentSigninBinding
 import com.adicoding.foodmarket.ui.auth.AuthActivity
 
@@ -30,6 +31,12 @@ class SigninFragment : Fragment() {
             val signup = Intent(activity, AuthActivity::class.java)
             signup.putExtra("page_request", 2)
             startActivity(signup)
+        }
+
+        binding.btnSignin.setOnClickListener{
+            val home = Intent(activity, MainActivity::class.java)
+            startActivity(home)
+            activity?.finish()
         }
     }
 

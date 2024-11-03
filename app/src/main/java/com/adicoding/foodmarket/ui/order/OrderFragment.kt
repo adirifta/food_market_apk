@@ -1,4 +1,4 @@
-package com.adicoding.foodmarket.ui.dashboard
+package com.adicoding.foodmarket.ui.order
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.adicoding.foodmarket.databinding.FragmentDashboardBinding
 
-class DashboardFragment : Fragment() {
+class OrderFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
 
