@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.adicoding.foodmarket.MainActivity
+import com.adicoding.foodmarket.ui.MainActivity
 import com.adicoding.foodmarket.databinding.FragmentSigninBinding
 import com.adicoding.foodmarket.ui.auth.AuthActivity
 

@@ -1,14 +1,12 @@
-package com.adicoding.foodmarket
+package com.adicoding.foodmarket.ui
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import com.adicoding.foodmarket.R
 import com.adicoding.foodmarket.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
