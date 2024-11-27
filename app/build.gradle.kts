@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-parcelize")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -47,7 +48,7 @@ android {
         create("dev") {
             dimension = "environment"
             applicationId = "com.adicoding.foodmarket.dev"
-            buildConfigField("String", "BASE_URL", "\"http://192.168.0.57:8000/\"")
+            buildConfigField("String", "BASE_URL", "\"https://api-foodmarket.adirdk.blog/\"")
         }
     }
 }

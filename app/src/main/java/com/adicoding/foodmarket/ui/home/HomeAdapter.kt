@@ -9,10 +9,11 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.adicoding.foodmarket.R
 import com.adicoding.foodmarket.model.dummy.HomeModel
+import com.adicoding.foodmarket.model.response.home.Data
 import com.bumptech.glide.Glide
 
 class HomeAdapter (
-    private val listData : List<HomeModel>,
+    private val listData : List<Data>,
     private val itemAdapterCallback : ItemAdapterCallback
 ) : RecyclerView.Adapter<HomeAdapter.ViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeAdapter.ViewHolder {
@@ -35,13 +36,13 @@ class HomeAdapter (
         private val rbFood = itemView.findViewById<RatingBar>(R.id.rbFood)
         private val ivPoster = itemView.findViewById<ImageView>(R.id.ivPoster)
 
-        fun bind(data: HomeModel, itemAdapterCallback: ItemAdapterCallback) {
-            tvTitle.text = data.title
-            rbFood.rating = data.rating
+        fun bind(data: Data, itemAdapterCallback: ItemAdapterCallback) {
+            tvTitle.text = data.name
+            rbFood.rating = data.rate?.toFloat() ?: 0f
 
-//            Glide.with(itemView.context)
-//                .load(data.src)
-//                .into(ivPoster)
+            Glide.with(itemView.context)
+                .load(data.picturePath)
+                .into(ivPoster)
 
             itemView.setOnClickListener { itemAdapterCallback.onClick(it, data) }
         }
@@ -49,7 +50,7 @@ class HomeAdapter (
 
 
     interface ItemAdapterCallback {
-        fun onClick(v: View, data: HomeModel)
+        fun onClick(v: View, data: Data)
 
     }
 }

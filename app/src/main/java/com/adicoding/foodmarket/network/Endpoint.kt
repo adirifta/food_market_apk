@@ -1,11 +1,13 @@
 package com.adicoding.foodmarket.network
 
 import com.adicoding.foodmarket.model.response.Wrapper
+import com.adicoding.foodmarket.model.response.home.HomeResponse
 import com.adicoding.foodmarket.model.response.login.LoginResponse
 import io.reactivex.Observable
 import okhttp3.MultipartBody
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
+import retrofit2.http.GET
 import retrofit2.http.Multipart
 import retrofit2.http.POST
 import retrofit2.http.Part
@@ -35,4 +37,7 @@ interface Endpoint {
     @Multipart
     @POST("user/photo")
     fun registerPhoto(@Part profileImage: MultipartBody.Part) : Observable<Wrapper<Any>>
+
+    @GET("food")
+    fun home() : Observable<Wrapper<HomeResponse>>
 }
